@@ -1,168 +1,466 @@
-<!DOCTYPE html>
-<html>
-   <head>
-      <!-- basic -->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
-      <title>Blog</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-      <!-- style css -->
-      <link rel="stylesheet" type="text/css" href="css/style.css">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <!-- font css -->
-      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-   </head>
-   <body>
-      <div class="header_section header_bg">
-         <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-               <a class="navbar-brand"href="index.html"><img src="images/logo.png"></a>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="coffees.html">Coffees</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="shop.html">Shop</a>
-                     </li>
-                     <li class="nav-item active">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                     </li>
-                  </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                     <div class="login_bt">
-                        <ul>
-                           <li><a href="#"><span class="user_icon"><i class="fa fa-user" aria-hidden="true"></i></span>Login</a></li>
-                           <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                        </ul>
-                     </div>
-                  </form>
-               </div>
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cafephile - Restaurants Category Bootstrap Responsive Website Template - Blog Posts </title>
+    <!-- google-fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- //google-fonts -->
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="assets/css/style-liberty.css">
+</head>
+
+<body>
+    <!--header-->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg stroke">
+                <h1>
+                    <a class="navbar-brand d-flex align-items-center" href="index.html">
+                        <img src="assets/images/logo.png" alt="" />
+                        <span class="mt-2">Cafephile</span>
+                    </a>
+                </h1>
+                <!-- if logo is image enable this   
+    <a class="navbar-brand" href="#index.html">
+        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+    </a> -->
+                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link dropdown-toggle d-lg-flex align-items-center" href="#"
+                                id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
+                                Pages <i class="fas fa-angle-down ml-lg-1"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item active" href="blog.html">Blog Posts</a>
+                                <a class="dropdown-item" href="blog-single.html">Blog Single</a>
+                                <a class="dropdown-item" href="error.html">404 Page</a>
+                                <a class="dropdown-item" href="email-template.html">Email Template</a>
+                                <a class="dropdown-item" href="landing-single.html">Landing Page</a>
+                                <a class="dropdown-item" href="shortcodes.html">Shortcodes</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <!-- search button -->
+                        <div class="search-right ml-lg-3">
+                            <form action="error.html" method="GET" class="search-box position-relative">
+                                <div class="input-search">
+                                    <input type="search" placeholder="Enter Keyword" name="search" required="required"
+                                        autofocus="" class="search-popup">
+                                </div>
+                                <button type="submit" class="btn search-btn"><i class="fa fa-search"
+                                        aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                        <!-- //search button -->
+                    </ul>
+                </div>
+                <!-- toggle switch for light and dark theme -->
+                <div class="cont-ser-position">
+                    <nav class="navigation">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <div class="mode-container">
+                                    <i class="gg-sun"></i>
+                                    <i class="gg-moon"></i>
+                                </div>
+                            </label>
+                        </div>
+                    </nav>
+                </div>
+                <!-- //toggle switch for light and dark theme -->
             </nav>
-         </div>
-      </div>
-      <!-- header section end -->
-      <!-- blog section start -->
-      <div class="blog_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <h1 class="about_taital">Our Blog</h1>
-                  <div class="bulit_icon"><img src="images/bulit-icon.png"></div>
-               </div>
+        </div>
+    </header>
+    <!--//header-->
+
+    <!-- inner banner -->
+    <section class="inner-banner py-lg-5 py-sm-4 py-2">
+        <div class="w3l-breadcrumb py-5">
+            <div class="container py-xl-5 py-md-4 mt-5">
+                <h4 class="inner-text-title font-weight-bold mb-sm-2">Blog Posts</h4>
+                <ul class="breadcrumbs-custom-path">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>Blog Posts</li>
+                </ul>
             </div>
-            <div class="blog_section_2">
-               <div class="row">
-                  <div class="col-md-6">
-                     <div class="blog_box">
-                        <div class="blog_img"><img src="images/blog-img1.png"></div>
-                        <h4 class="date_text">05 April</h4>
-                        <h4 class="prep_text">PREP TECHNIQUES Coffee</h4>
-                        <p class="lorem_text">distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a moredistracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more</p>
-                     </div>
-                     <div class="read_bt"><a href="#">Read More</a></div>
-                  </div>
-                  <div class="col-md-6">
-                     <div class="blog_box">
-                        <div class="blog_img"><img src="images/blog-img2.png"></div>
-                        <h4 class="date_text">05 April</h4>
-                        <h4 class="prep_text">PREP TECHNIQUES Coffee</h4>
-                        <p class="lorem_text">distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a moredistracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more</p>
-                     </div>
-                     <div class="read_bt"><a href="#">Read More</a></div>
-                  </div>
-               </div>
+        </div>
+    </section>
+    <!-- //inner banner -->
+
+    <!-- blog section -->
+    <section class="w3l-blog-sec py-5">
+        <div class="container py-md-5 py-4">
+            <div class="text-center mb-lg-5 mb-4">
+                <h5 class="sub-title"><i class="fas fa-mug-hot"></i> News & Blog</h5>
+                <h3 class="title-style">Latest News & Blog</h3>
             </div>
-         </div>
-      </div>
-      <!-- blog section end -->
-      <!-- footer section start -->
-      <div class="footer_section layout_padding">
-         <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-md-6">
+                    <div class="blog-info">
+                        <a href="blog-single.html">
+                            <img class="img-fluid" src="assets/images/blog2.jpg" alt="blog-image">
+                        </a>
+                        <h3><a href="blog-single.html">History of Coffee</a></h3>
+                        <p>Sed ut perspiciatis unde omnisiste natus error sit accusa ntium dolor emque
+                            lauda ntium.</p>
+                        <ul class="admin-list mt-4 pt-4">
+                            <li><a href="blog-single.html"><i class="far fa-user"></i>Molive Joe
+                                </a></li>
+                            <li><a href="blog-single.html"><i class="far fa-heart"></i>12 Likes</a></li>
+                            <li><a href="blog-single.html"><i class="far fa-comment-dots"></i>9 Comments</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 mt-md-0 mt-4">
+                    <div class="blog-info">
+                        <a href="blog-single.html">
+                            <img class="img-fluid" src="assets/images/blog1.jpg" alt="blog-image">
+                        </a>
+                        <h3> <a href="blog-single.html">Special tasty Coffee</a></h3>
+                        <p>Sed ut perspiciatis unde omnisiste natus error sit accusa ntium dolor emque
+                            lauda ntium.</p>
+                        <ul class="admin-list mt-4 pt-4">
+                            <li><a href="blog-single.html"><i class="far fa-user"></i>Turne Leo
+                                </a></li>
+                            <li><a href="blog-single.html"><i class="far fa-heart"></i>14 Likes</a></li>
+                            <li><a href="blog-single.html"><i class="far fa-comment-dots"></i>9 Comments</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 mt-xl-0 mt-lg-5 mt-4" id="zoomIn">
+                    <div class="blog-info">
+                        <a href="blog-single.html">
+                            <img class="img-fluid" src="assets/images/blog3.jpg" alt="blog-image">
+                        </a>
+                        <h3> <a href="blog-single.html">Coffee roasts Guide</a> </h3>
+                        <p>Sed ut perspiciatis unde omnisiste natus error sit accusa ntium dolor emque
+                            lauda ntium.</p>
+                        <ul class="admin-list mt-4 pt-4">
+                            <li><a href="blog-single.html"><i class="far fa-user"></i>Eetey Cruis
+                                </a></li>
+                            <li><a href="blog-single.html"><i class="far fa-heart"></i>10 Likes</a></li>
+                            <li><a href="blog-single.html"><i class="far fa-comment-dots"></i>9 Comments</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 mt-lg-5 mt-4">
+                    <div class="blog-info">
+                        <a href="blog-single.html">
+                            <img class="img-fluid" src="assets/images/blog4.jpg" alt="blog-image">
+                        </a>
+                        <h3><a href="blog-single.html">Happy with Coffee</a></h3>
+                        <p>Sed ut perspiciatis unde omnisiste natus error sit accusa ntium dolor emque
+                            lauda ntium.</p>
+                        <ul class="admin-list mt-4 pt-4">
+                            <li><a href="blog-single.html"><i class="far fa-user"></i>Molive Joe
+                                </a></li>
+                            <li><a href="blog-single.html"><i class="far fa-heart"></i>12 Likes</a></li>
+                            <li><a href="blog-single.html"><i class="far fa-comment-dots"></i>9 Comments</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 mt-lg-5 mt-4">
+                    <div class="blog-info">
+                        <a href="blog-single.html">
+                            <img class="img-fluid" src="assets/images/blog6.jpg" alt="blog-image">
+                        </a>
+                        <h3> <a href="blog-single.html">Coffee make active</a></h3>
+                        <p>Sed ut perspiciatis unde omnisiste natus error sit accusa ntium dolor emque
+                            lauda ntium.</p>
+                        <ul class="admin-list mt-4 pt-4">
+                            <li><a href="blog-single.html"><i class="far fa-user"></i>Turne Leo
+                                </a></li>
+                            <li><a href="blog-single.html"><i class="far fa-heart"></i>14 Likes</a></li>
+                            <li><a href="blog-single.html"><i class="far fa-comment-dots"></i>9 Comments</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 mt-lg-5 mt-4" id="zoomIn">
+                    <div class="blog-info">
+                        <a href="blog-single.html">
+                            <img class="img-fluid" src="assets/images/blog5.jpg" alt="blog-image">
+                        </a>
+                        <h3> <a href="blog-single.html">Best Taste Coffee</a> </h3>
+                        <p>Sed ut perspiciatis unde omnisiste natus error sit accusa ntium dolor emque
+                            lauda ntium.</p>
+                        <ul class="admin-list mt-4 pt-4">
+                            <li><a href="blog-single.html"><i class="far fa-user"></i>Eetey Cruis
+                                </a></li>
+                            <li><a href="blog-single.html"><i class="far fa-heart"></i>10 Likes</a></li>
+                            <li><a href="blog-single.html"><i class="far fa-comment-dots"></i>9 Comments</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- pagination -->
+            <div class="pagination-style text-center mt-5 pt-lg-5 pt-2">
+                <ul>
+                    <li> <a href="#none" class="not-allowed" disabled="">
+                            <span class="fa fa-angle-double-left" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li><a class="active" href="#page">1</a></li>
+                    <li>
+                        <a href="#page">2</a>
+                    </li>
+                    <li>
+                        <a href="#page">3</a>
+                    </li>
+                    <li>
+                        <a href="#page"><span class="fa fa-angle-double-right" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- //pagination -->
+        </div>
+    </section>
+    <!-- //blog section -->
+
+    <!-- footer -->
+    <footer class="w3l-footer-16 py-5">
+        <div class="container pt-md-4">
+            <div class="end-column mx-auto mb-5 pb-lg-4 text-center" style="max-width:550px">
+                <h3 class="big-text mb-3">Coffee Build your Fresh mind</h3>
+                <form action="#" class="subscribe" method="post">
+                    <input type="email" name="email" placeholder="Email Address" required="">
+                    <button>Subscribe Now</button>
+                </form>
+            </div>
             <div class="row">
-               <div class="col-md-12">
-                  <h1 class="address_text">Address</h1>
-                  <p class="footer_text">here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use </p>
-                  <div class="location_text">
-                     <ul>
+                <div class="col-lg-4 pr-lg-5">
+                    <a class="footer-logo d-flex align-items-center" href="index.html">
+                        <img src="assets/images/logo.png" alt=""><span class="mt-2">Cafephile</span></a>
+                    <p class="mt-3">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo
+                        minus id quod maxime placeat facere. Iste natus error sit oluptatem accusantium doloremque
+                        ladase.</p>
+                    <div class="columns-2 mt-4">
+                        <ul class="social">
+                            <li><a href="#facebook"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li><a href="#linkedin"><i class="fab fa-linkedin-in"></i></a>
+                            </li>
+                            <li><a href="#twitter"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#google"><i class="fab fa-google-plus-g"></i></a>
+                            </li>
+                            <li><a href="#github"><i class="fab fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-5 mt-lg-0 mt-5">
+                    <div class="row">
+                        <div class="col-xl-5 col-6 column">
+                            <h3 class="mt-lg-3">Quick Link</h3>
+                            <ul class="footer-gd-16">
+                                <li><a href="index.html">Home Page</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="menu.html">Our Menu</a></li>
+                                <li><a href="blog.html">Blog Posts</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-5 col-6 column pl-lg-0">
+                            <h3 class="mt-lg-3">Contact Info</h3>
+                            <ul class="footer-contact-list">
+                                <li class="">10001, 5th Avenue,
+                                    #32841 block, USA</li>
+                                <li class="mt-2"><a href="tel:+12 23456790">+1223 456 790</a></li>
+                                <li class="mt-2"><a href="mailto:info@example.com">info@example.com</a></li>
+                                <li class="mt-2"><a href="mailto:info@example.com">www.example.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-7 col-8 column mt-lg-0 mt-4 pl-xl-0">
+                    <h3 class="mt-lg-3">Opening Hours</h3>
+                    <ul class="list-footer-block">
                         <li>
-                           <a href="#">
-                           <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">+01 1234567890</span>
-                           </a>
+                            Monday
+                            <span>9:00 - 18:00</span>
                         </li>
                         <li>
-                           <a href="#">
-                           <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">demo@gmail.com</span>
-                           </a>
+                            tuesday
+                            <span>10:00 - 18:00</span>
                         </li>
-                     </ul>
-                  </div>
-                  <div class="form-group">
-                     <textarea class="update_mail" placeholder="Your Email" rows="5" id="comment" name="Your Email"></textarea>
-                     <div class="subscribe_bt"><a href="#"><img src="images/teligram-icon.png"></a></div>
-                  </div>
-               </div>
+                        <li>
+                            Wednesday
+                            <span>8:00 - 18:00</span>
+                        </li>
+                        <li>
+                            Thursday
+                            <span>10:00 - 18:00</span>
+                        </li>
+                        <li>
+                            Friday
+                            <span>11:00 - 18:00</span>
+                        </li>
+                        <li>
+                            Saturday
+                            <span>12:00 - 18:00</span>
+                        </li>
+                        <li>
+                            Sunday
+                            <span>closed</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
-         </div>
-      </div>
-      <!-- footer section end -->
-      <!-- copyright section start -->
-      <div class="copyright_section">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-6 col-sm-12">
-                  <p class="copyright_text">2020 All Rights Reserved. Design by <a href="https://html.design">Free Html Templates</a></p>
-               </div>
-               <div class="col-lg-6 col-sm-12">
-                  <div class="footer_social_icon">
-                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                     </ul>
-                  </div>
-               </div>
+            <div class="below-section text-center pt-4 mt-5">
+                <p class="copy-text">&copy; 2021 Cafephile. All rights reserved.
+                </p>
             </div>
-         </div>
-      </div>
-      <!-- copyright section end -->
-      <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/plugin.js"></script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
-   </body>
+        </div>
+    </footer>
+    <!-- //footer -->
+
+    <!-- Js scripts -->
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- //move top -->
+
+    <!-- common jquery plugin -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <!-- //common jquery plugin -->
+
+    <!-- theme switch js (light and dark)-->
+    <script src="assets/js/theme-change.js"></script>
+    <script>
+        function autoType(elementClass, typingSpeed) {
+            var thhis = $(elementClass);
+            thhis.css({
+                "position": "relative",
+                "display": "inline-block"
+            });
+            thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+            thhis = thhis.find(".text-js");
+            var text = thhis.text().trim().split('');
+            var amntOfChars = text.length;
+            var newString = "";
+            thhis.text("|");
+            setTimeout(function () {
+                thhis.css("opacity", 1);
+                thhis.prev().removeAttr("style");
+                thhis.text("");
+                for (var i = 0; i < amntOfChars; i++) {
+                    (function (i, char) {
+                        setTimeout(function () {
+                            newString += char;
+                            thhis.text(newString);
+                        }, i * typingSpeed);
+                    })(i + 1, text[i]);
+                }
+            }, 1500);
+        }
+
+        $(document).ready(function () {
+            // Now to start autoTyping just call the autoType function with the 
+            // class of outer div
+            // The second paramter is the speed between each letter is typed.   
+            autoType(".type-js", 200);
+        });
+    </script>
+    <!-- //theme switch js (light and dark)-->
+
+    <!-- MENU-JS -->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!-- //MENU-JS -->
+
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+
+    <!--bootstrap-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- //bootstrap-->
+    <!-- //Js scripts -->
+</body>
+
 </html>
