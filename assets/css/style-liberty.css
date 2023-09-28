@@ -18116,7 +18116,7 @@ header.nav-fixed {
   z-index: 9 !important;
   background-color: var(--bg-color);
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
-  height: 70px;
+  height: 88px;
   /* for z-index:10 to display gallery popup */
 }
 
@@ -18366,8 +18366,8 @@ button.search-btn:hover {
   }
 
   header.nav-fixed {
-    height: auto;
-    padding: 14px 0;
+    height: 100px;
+    padding: 1px 0;
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
@@ -19450,11 +19450,11 @@ button.owl-next {
   font-weight: 600;
   font-size: 20px;
   margin: 10px 0 5px;
-  color: #fff;
+  color: #000;
 }
 
 .w3l-clients-1 p.identity {
-  color: #fff;
+  color: #000;
   font-size: 16px;
 }
 
