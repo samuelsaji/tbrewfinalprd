@@ -10765,7 +10765,7 @@ button.bg-dark:focus {
 }
 
 .text-white {
-  color: #fff !important;
+  color: #000 !important;
 }
 
 .text-primary {
@@ -10985,8 +10985,9 @@ a.text-dark:focus {
 }
 
 :root {
-  --primary-color: #ffc845;
-  --secondary-color: #d2804b;
+  --primary-color: hsl(357.43deg 85.37% 51.76%);
+  ;
+  --secondary-color: hsl(76.92deg 62.4% 50.98%);
   --font-color: #707070;
   --bg-color: #fff;
   --heading-color: #060606;
@@ -18586,20 +18587,20 @@ h3.title-main:after {
 }
 
 .banner-19 .main-content {
-  max-width: 550px;
+  max-width: 800px;
   margin-top: 70px;
 }
 
 .banner-19 .main-content h4 {
   font-size: 60px;
-  line-height: 70px;
+  line-height: 58px;
   color: #fff;
   font-weight: bold;
 }
 
-.banner-19 .main-content h4 span {
+.banner-19 .main-content h4  {
   display: block;
-  margin-left: 135px;
+  margin-left: 10px;
 }
 
 .banner-19 .main-content p {
@@ -18626,8 +18627,8 @@ h3.title-main:after {
     line-height: 55px;
   }
 
-  .banner-19 .main-content h4 span {
-    margin-left: 100px;
+  .banner-19 .main-content h4  {
+    margin-left: 10px;
   }
 }
 
@@ -18645,7 +18646,7 @@ h3.title-main:after {
   }
 
   .banner-19 .main-content h4 span {
-    margin-left: 80px;
+    margin-left: 10px;
   }
 }
 
@@ -19376,7 +19377,8 @@ button.owl-next {
 
 .w3l-clients-1 {
   background: var(--bg-light);
-  background: url(../images/bg1.jpg) no-repeat center;
+  /* background: url(../images/bg1.jpg) no-repeat center; */
+  background-color: #fff;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -19388,7 +19390,7 @@ button.owl-next {
 
 .w3l-clients-1:before {
   content: "";
-  background: rgb(21 15 13 / 9%);
+  background: #fff;
   position: absolute;
   top: 0;
   min-height: 100%;
@@ -19408,7 +19410,7 @@ button.owl-next {
 .w3l-clients-1 blockquote q {
   font-size: 22px;
   line-height: 34px;
-  color: #fff;
+  color: #000;
 }
 
 .w3l-clients-1 blockquote q:before {
