@@ -7514,6 +7514,10 @@ button.bg-dark:focus {
   border: 0;
 }
 
+
+
+
+
 .embed-responsive-21by9::before {
   padding-top: 42.85714%;
 }
@@ -17936,6 +17940,17 @@ div#small-dialog iframe {
 }
 
 @font-face {
+  font-family: "barbei";
+  src: url("../webfonts/FontsFree-Net-barbie.ttf") format("truetype");
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: "ananda";
+  src: url("../webfonts/AnandaBlackPersonalUseRegular-rg9Rx.ttf") format("truetype")
+}
+
+@font-face {
   font-family: 'Font Awesome 5 Brands';
   font-style: normal;
   font-weight: 400;
@@ -17970,6 +17985,14 @@ div#small-dialog iframe {
   font-display: block;
   src: url("../webfonts/fa-solid-900.eot");
   src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+.custom-font1{
+  font-family: "barbei";
+}
+
+.custom-font2{
+  font-family: "ananda";
 }
 
 .fa,
@@ -18572,6 +18595,7 @@ h3.title-main:after {
 .banner-19 .banner-layer {
   position: relative;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .main-content-top {
@@ -18588,14 +18612,14 @@ h3.title-main:after {
 
 .banner-19 .main-content {
   max-width: 800px;
-  margin-top: 70px;
+  margin-top: -13px;
 }
 
 .banner-19 .main-content h4 {
   font-size: 60px;
   line-height: 58px;
   color: #fff;
-  font-weight: bold;
+  
 }
 
 .banner-19 .main-content h4  {
@@ -19537,7 +19561,7 @@ a.testi-img {
 }
 
 .w3l-clients-1 .owl-theme .owl-dots .owl-dot span {
-  background: #fff;
+  background: lightslategrey;
   opacity: 0.3;
 }
 
