@@ -8744,7 +8744,7 @@ button.bg-dark:focus {
 
 .pt-5,
 .py-5 {
-  padding-top: 3rem !important;
+  padding-top: 4rem !important;
 }
 
 .pr-5,
@@ -17995,6 +17995,10 @@ div#small-dialog iframe {
   font-family: "ananda";
 }
 
+.custom-font3{
+  font-family: "barbei";
+}
+
 .fa,
 .fas {
   font-family: 'Font Awesome 5 Free';
@@ -18039,7 +18043,7 @@ a.footer-logo {
   padding: 0;
   font-size: 28px;
   color: #fff;
-  font-weight: bold;
+ 
 }
 
 .navbar .navbar-brand img,
@@ -18685,7 +18689,7 @@ h3.title-main:after {
 /* about section */
 h3.title-style {
   color: var(--heading-color);
-  font-size: 35px;
+  font-size: 33px;
   line-height: 45px;
   font-weight: bold;
   text-transform: capitalize;
@@ -18726,7 +18730,7 @@ h5.sub-title i {
 
 @media (max-width: 768px) {
   h3.title-style {
-    font-size: 32px;
+    font-size: 33px;
     line-height: 42px;
   }
 
@@ -19959,7 +19963,7 @@ h3.big-text {
 
 .w3l-breadcrumb {
   display: block;
-  margin: 0 auto;
+ margin-top: 18px;
   z-index: 100;
   padding-top: 150px;
   z-index: 99;
@@ -20084,7 +20088,7 @@ p.count-text {
 
 /* bg with video icon */
 .w3l-covers-14 {
-  background: url("../images/bg3.jpg") no-repeat center fixed;
+  background: url("../images/b3.jpg") no-repeat center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
