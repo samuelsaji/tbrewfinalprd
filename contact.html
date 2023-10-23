@@ -89,13 +89,18 @@
                     <h3 class="title-style">Contact Us</h3>
                 </div>
                 <div class="contacts12-main">
-                    <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="main-input">
+                    <form action="https://formsubmit.co/info@tbrewtea.com" method="post" class="main-input">
                         <div class="top-inputs d-grid">
-                            <input type="text" placeholder="Name" name="w3lName" id="w3lName" required="">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_next" value="https://tbrewtea.com/">
+
+                            
+                            <input type="text" placeholder="Name" name="Name" id="w3lName" required="">
                             <input type="email" name="email" placeholder="Email" id="w3lSender" required="">
                         </div>
-                        <input type="text" placeholder="Phone Number" name="w3lName" id="w3lName" required="">
-                        <textarea placeholder="Message" name="w3lMessage" id="w3lMessage" required=""></textarea>
+                        <input type="number" placeholder="Phone Number" name="Phone Number" id="w3lName" required="">
+                        <textarea placeholder="Message" name="Message" id="w3lMessage" required=""></textarea>
                         <button type="submit" class="btn btn-style btn-style-primary">Send Now</button>
                     </form>
                 </div>
